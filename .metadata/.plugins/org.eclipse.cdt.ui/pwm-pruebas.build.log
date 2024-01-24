@@ -1,0 +1,10 @@
+21:08:51 **** Incremental Build of configuration Debug for project pwm-pruebas ****
+make -j4 all 
+arm-none-eabi-size  pwm-pruebas.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7692	     20	   1644	   9356	   248c	pwm-pruebas.elf
+Finished building: default.size.stdout
+ 
+
+21:08:51 Build Finished. 0 errors, 0 warnings. (took 257ms)
+

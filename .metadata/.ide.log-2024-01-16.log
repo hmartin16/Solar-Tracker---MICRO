@@ -1,0 +1,187 @@
+2024-01-17 00:35:06,279 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-01-17 00:35:12,405 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-01-17 00:35:14,162 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 657889464 Bytes (1073741824)
+2024-01-17 00:35:15,916 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 682996048 Bytes (1073741824)
+2024-01-17 00:35:16,145 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-01-17 00:35:16,145 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-01-17 00:35:16,146 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-01-17 00:35:16,146 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-01-17 00:35:16,146 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2024-01-17 00:35:16,146 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2024-01-17 00:35:16,146 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.14.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.10.0.202311202037\\db\
+2024-01-17 00:35:16,308 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\MXTmpFiles\license.tmp_save
+2024-01-17 00:35:16,418 [INFO] CodeEngine:279 - Generated code: D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\MXTmpFiles\license.tmp
+2024-01-17 00:35:16,433 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\MXTmpFiles\gpio.tmp_save
+2024-01-17 00:35:16,534 [INFO] CodeEngine:279 - Generated code: D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\MXTmpFiles\gpio.tmp
+2024-01-17 00:35:16,672 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Src\stm32f1xx_it.c_save
+2024-01-17 00:35:16,927 [INFO] CodeEngine:279 - Generated code: D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Src\stm32f1xx_it.c
+2024-01-17 00:35:16,952 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Inc\stm32f1xx_it.h_save
+2024-01-17 00:35:17,020 [INFO] CodeEngine:279 - Generated code: D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Inc\stm32f1xx_it.h
+2024-01-17 00:35:17,038 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Src\stm32f1xx_hal_msp.c_save
+2024-01-17 00:35:17,147 [INFO] CodeEngine:279 - Generated code: D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Src\stm32f1xx_hal_msp.c
+2024-01-17 00:35:17,150 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\MXTmpFiles\system.tmp_save
+2024-01-17 00:35:17,218 [INFO] CodeEngine:279 - Generated code: D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\MXTmpFiles\system.tmp
+2024-01-17 00:35:17,242 [INFO] CodeEngine:311 - oldGeneratedFile, D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-01-17 00:35:17,349 [INFO] CodeEngine:335 - Generated code: D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Inc\stm32f1xx_hal_conf.h
+2024-01-17 00:35:17,372 [WARN] IPConfigManager:3440 - IP not found : TIM
+2024-01-17 00:35:17,373 [WARN] CodeGenerator:3939 - IP not found : null
+2024-01-17 00:35:17,388 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Inc\main.h_save
+2024-01-17 00:35:17,514 [INFO] CodeEngine:279 - Generated code: D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Inc\main.h
+2024-01-17 00:35:17,527 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Src\main.c_save
+2024-01-17 00:35:17,650 [INFO] CodeEngine:279 - Generated code: D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Src\main.c
+2024-01-17 00:35:18,206 [INFO] ProjectBuilder:3076 - Time for Copy HAL[1] : 132mS.
+2024-01-17 00:35:18,209 [INFO] ProjectBuilder:4485 - Project Generator version: 4.2.0-B44
+2024-01-17 00:35:18,574 [INFO] ConfigFileManager:1495 - The Die is : DIE412
+2024-01-17 00:35:19,943 [INFO] ProjectBuilder:4747 - Time for Generating toolchain IDE Files: 1734mS.
+2024-01-17 00:35:19,944 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 1mS.
+2024-01-17 00:35:19,945 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 0mS.
+2024-01-17 01:12:25,204 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 671900872 Bytes (1073741824)
+2024-01-17 01:12:25,480 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-01-17 01:12:25,480 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-01-17 01:12:25,480 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-01-17 01:12:25,480 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-01-17 01:12:25,481 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2024-01-17 01:12:25,481 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2024-01-17 01:12:25,481 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.14.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.10.0.202311202037\\db\
+2024-01-17 01:12:25,634 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\MXTmpFiles\license.tmp_save
+2024-01-17 01:12:25,746 [INFO] CodeEngine:279 - Generated code: D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\MXTmpFiles\license.tmp
+2024-01-17 01:12:25,765 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\MXTmpFiles\gpio.tmp_save
+2024-01-17 01:12:25,872 [INFO] CodeEngine:279 - Generated code: D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\MXTmpFiles\gpio.tmp
+2024-01-17 01:12:26,015 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Src\stm32f1xx_it.c_save
+2024-01-17 01:12:26,295 [INFO] CodeEngine:279 - Generated code: D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Src\stm32f1xx_it.c
+2024-01-17 01:12:26,316 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Inc\stm32f1xx_it.h_save
+2024-01-17 01:12:26,386 [INFO] CodeEngine:279 - Generated code: D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Inc\stm32f1xx_it.h
+2024-01-17 01:12:26,412 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Src\stm32f1xx_hal_msp.c_save
+2024-01-17 01:12:26,574 [INFO] CodeEngine:279 - Generated code: D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Src\stm32f1xx_hal_msp.c
+2024-01-17 01:12:26,579 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\MXTmpFiles\system.tmp_save
+2024-01-17 01:12:26,644 [INFO] CodeEngine:279 - Generated code: D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\MXTmpFiles\system.tmp
+2024-01-17 01:12:26,667 [INFO] CodeEngine:311 - oldGeneratedFile, D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-01-17 01:12:26,792 [INFO] CodeEngine:335 - Generated code: D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Inc\stm32f1xx_hal_conf.h
+2024-01-17 01:12:26,818 [WARN] IPConfigManager:3440 - IP not found : TIM
+2024-01-17 01:12:26,818 [WARN] CodeGenerator:3939 - IP not found : null
+2024-01-17 01:12:26,836 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Inc\main.h_save
+2024-01-17 01:12:26,948 [INFO] CodeEngine:279 - Generated code: D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Inc\main.h
+2024-01-17 01:12:26,964 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Src\main.c_save
+2024-01-17 01:12:27,150 [INFO] CodeEngine:279 - Generated code: D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Src\main.c
+2024-01-17 01:12:27,929 [INFO] ProjectBuilder:3076 - Time for Copy HAL[1] : 173mS.
+2024-01-17 01:12:27,932 [INFO] ProjectBuilder:4485 - Project Generator version: 4.2.0-B44
+2024-01-17 01:12:28,255 [INFO] ConfigFileManager:1495 - The Die is : DIE412
+2024-01-17 01:12:29,841 [INFO] ProjectBuilder:4747 - Time for Generating toolchain IDE Files: 1909mS.
+2024-01-17 01:12:29,842 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 1mS.
+2024-01-17 01:12:29,843 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 0mS.
+2024-01-17 01:12:56,058 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-01-17 01:13:00,756 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-01-17 01:13:06,605 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-01-17 01:13:09,371 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 802003112 Bytes (1073741824)
+2024-01-17 01:13:11,397 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 828058224 Bytes (1073741824)
+2024-01-17 01:13:11,734 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-01-17 01:13:11,734 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-01-17 01:13:11,734 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-01-17 01:13:11,734 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-01-17 01:13:11,734 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2024-01-17 01:13:11,734 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2024-01-17 01:13:11,735 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.14.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.10.0.202311202037\\db\
+2024-01-17 01:13:11,992 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\MXTmpFiles\license.tmp_save
+2024-01-17 01:13:12,152 [INFO] CodeEngine:279 - Generated code: D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\MXTmpFiles\license.tmp
+2024-01-17 01:13:12,177 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\MXTmpFiles\gpio.tmp_save
+2024-01-17 01:13:12,354 [INFO] CodeEngine:279 - Generated code: D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\MXTmpFiles\gpio.tmp
+2024-01-17 01:13:12,517 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Src\stm32f1xx_it.c_save
+2024-01-17 01:13:12,625 [INFO] CodeEngine:279 - Generated code: D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Src\stm32f1xx_it.c
+2024-01-17 01:13:12,631 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Inc\stm32f1xx_it.h_save
+2024-01-17 01:13:12,780 [INFO] CodeEngine:279 - Generated code: D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Inc\stm32f1xx_it.h
+2024-01-17 01:13:12,801 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Src\stm32f1xx_hal_msp.c_save
+2024-01-17 01:13:12,953 [INFO] CodeEngine:279 - Generated code: D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Src\stm32f1xx_hal_msp.c
+2024-01-17 01:13:12,959 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\MXTmpFiles\system.tmp_save
+2024-01-17 01:13:13,029 [INFO] CodeEngine:279 - Generated code: D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\MXTmpFiles\system.tmp
+2024-01-17 01:13:13,054 [INFO] CodeEngine:311 - oldGeneratedFile, D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-01-17 01:13:13,172 [INFO] CodeEngine:335 - Generated code: D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Inc\stm32f1xx_hal_conf.h
+2024-01-17 01:13:13,197 [WARN] IPConfigManager:3440 - IP not found : TIM
+2024-01-17 01:13:13,197 [WARN] CodeGenerator:3939 - IP not found : null
+2024-01-17 01:13:13,216 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Inc\main.h_save
+2024-01-17 01:13:13,303 [INFO] CodeEngine:279 - Generated code: D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Inc\main.h
+2024-01-17 01:13:13,318 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Src\main.c_save
+2024-01-17 01:13:13,454 [INFO] CodeEngine:279 - Generated code: D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Src\main.c
+2024-01-17 01:13:14,123 [INFO] ProjectBuilder:3076 - Time for Copy HAL[1] : 154mS.
+2024-01-17 01:13:14,126 [INFO] ProjectBuilder:4485 - Project Generator version: 4.2.0-B44
+2024-01-17 01:13:14,420 [INFO] ConfigFileManager:1495 - The Die is : DIE412
+2024-01-17 01:13:16,192 [INFO] ProjectBuilder:4747 - Time for Generating toolchain IDE Files: 2067mS.
+2024-01-17 01:13:16,193 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 0mS.
+2024-01-17 01:13:16,194 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 0mS.
+2024-01-17 01:16:33,142 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-01-17 01:16:40,698 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-01-17 01:16:42,523 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-01-17 01:16:47,577 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 799332256 Bytes (1073741824)
+2024-01-17 01:16:49,373 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 662594264 Bytes (1073741824)
+2024-01-17 01:16:49,771 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-01-17 01:16:49,771 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-01-17 01:16:49,771 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-01-17 01:16:49,771 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-01-17 01:16:49,771 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2024-01-17 01:16:49,771 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2024-01-17 01:16:49,772 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.14.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.10.0.202311202037\\db\
+2024-01-17 01:16:49,958 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\MXTmpFiles\license.tmp_save
+2024-01-17 01:16:50,153 [INFO] CodeEngine:279 - Generated code: D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\MXTmpFiles\license.tmp
+2024-01-17 01:16:50,170 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\MXTmpFiles\gpio.tmp_save
+2024-01-17 01:16:50,274 [INFO] CodeEngine:279 - Generated code: D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\MXTmpFiles\gpio.tmp
+2024-01-17 01:16:50,457 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Src\stm32f1xx_it.c_save
+2024-01-17 01:16:50,609 [INFO] CodeEngine:279 - Generated code: D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Src\stm32f1xx_it.c
+2024-01-17 01:16:50,615 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Inc\stm32f1xx_it.h_save
+2024-01-17 01:16:50,702 [INFO] CodeEngine:279 - Generated code: D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Inc\stm32f1xx_it.h
+2024-01-17 01:16:50,724 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Src\stm32f1xx_hal_msp.c_save
+2024-01-17 01:16:50,870 [INFO] CodeEngine:279 - Generated code: D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Src\stm32f1xx_hal_msp.c
+2024-01-17 01:16:50,875 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\MXTmpFiles\system.tmp_save
+2024-01-17 01:16:50,942 [INFO] CodeEngine:279 - Generated code: D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\MXTmpFiles\system.tmp
+2024-01-17 01:16:50,960 [INFO] CodeEngine:311 - oldGeneratedFile, D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-01-17 01:16:51,078 [INFO] CodeEngine:335 - Generated code: D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Inc\stm32f1xx_hal_conf.h
+2024-01-17 01:16:51,111 [WARN] IPConfigManager:3440 - IP not found : TIM
+2024-01-17 01:16:51,111 [WARN] CodeGenerator:3939 - IP not found : null
+2024-01-17 01:16:51,132 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Inc\main.h_save
+2024-01-17 01:16:51,232 [INFO] CodeEngine:279 - Generated code: D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Inc\main.h
+2024-01-17 01:16:51,247 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Src\main.c_save
+2024-01-17 01:16:51,441 [INFO] CodeEngine:279 - Generated code: D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Src\main.c
+2024-01-17 01:16:52,246 [INFO] ProjectBuilder:3076 - Time for Copy HAL[1] : 174mS.
+2024-01-17 01:16:52,249 [INFO] ProjectBuilder:4485 - Project Generator version: 4.2.0-B44
+2024-01-17 01:16:52,608 [INFO] ConfigFileManager:1495 - The Die is : DIE412
+2024-01-17 01:16:54,197 [INFO] ProjectBuilder:4747 - Time for Generating toolchain IDE Files: 1949mS.
+2024-01-17 01:16:54,198 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 0mS.
+2024-01-17 01:16:54,202 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 1mS.
+2024-01-17 01:24:42,478 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-01-17 01:24:44,633 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-01-17 01:24:46,460 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-01-17 01:24:47,939 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-01-17 01:24:49,148 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-01-17 01:27:03,915 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 711344336 Bytes (1073741824)
+2024-01-17 01:27:05,907 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 736253176 Bytes (1073741824)
+2024-01-17 01:27:06,205 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-01-17 01:27:06,205 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-01-17 01:27:06,205 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-01-17 01:27:06,205 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-01-17 01:27:06,205 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2024-01-17 01:27:06,205 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2024-01-17 01:27:06,206 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.14.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.10.0.202311202037\\db\
+2024-01-17 01:27:06,365 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\MXTmpFiles\license.tmp_save
+2024-01-17 01:27:06,508 [INFO] CodeEngine:279 - Generated code: D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\MXTmpFiles\license.tmp
+2024-01-17 01:27:06,527 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\MXTmpFiles\gpio.tmp_save
+2024-01-17 01:27:06,660 [INFO] CodeEngine:279 - Generated code: D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\MXTmpFiles\gpio.tmp
+2024-01-17 01:27:06,816 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Src\stm32f1xx_it.c_save
+2024-01-17 01:27:06,917 [INFO] CodeEngine:279 - Generated code: D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Src\stm32f1xx_it.c
+2024-01-17 01:27:06,923 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Inc\stm32f1xx_it.h_save
+2024-01-17 01:27:07,040 [INFO] CodeEngine:279 - Generated code: D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Inc\stm32f1xx_it.h
+2024-01-17 01:27:07,063 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Src\stm32f1xx_hal_msp.c_save
+2024-01-17 01:27:07,220 [INFO] CodeEngine:279 - Generated code: D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Src\stm32f1xx_hal_msp.c
+2024-01-17 01:27:07,226 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\MXTmpFiles\system.tmp_save
+2024-01-17 01:27:07,302 [INFO] CodeEngine:279 - Generated code: D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\MXTmpFiles\system.tmp
+2024-01-17 01:27:07,325 [INFO] CodeEngine:311 - oldGeneratedFile, D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-01-17 01:27:07,453 [INFO] CodeEngine:335 - Generated code: D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Inc\stm32f1xx_hal_conf.h
+2024-01-17 01:27:07,479 [WARN] IPConfigManager:3440 - IP not found : TIM
+2024-01-17 01:27:07,479 [WARN] CodeGenerator:3939 - IP not found : null
+2024-01-17 01:27:07,497 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Inc\main.h_save
+2024-01-17 01:27:07,683 [INFO] CodeEngine:279 - Generated code: D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Inc\main.h
+2024-01-17 01:27:07,698 [INFO] CodeEngine:255 - oldGeneratedFile, D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Src\main.c_save
+2024-01-17 01:27:07,878 [INFO] CodeEngine:279 - Generated code: D:\Usuarios\martin\documents\STM_pruebas\intento1000PWM\Core\Src\main.c
+2024-01-17 01:27:08,466 [INFO] ProjectBuilder:3076 - Time for Copy HAL[1] : 143mS.
+2024-01-17 01:27:08,470 [INFO] ProjectBuilder:4485 - Project Generator version: 4.2.0-B44
+2024-01-17 01:27:08,814 [INFO] ConfigFileManager:1495 - The Die is : DIE412
+2024-01-17 01:27:10,319 [INFO] ProjectBuilder:4747 - Time for Generating toolchain IDE Files: 1849mS.
+2024-01-17 01:27:10,320 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 1mS.
+2024-01-17 01:27:10,321 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 0mS.

@@ -1,0 +1,10 @@
+00:17:46 **** Incremental Build of configuration Debug for project pwm-FUNCIONA ****
+make -j4 all 
+arm-none-eabi-size  pwm-FUNCIONA.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7712	     20	   1644	   9376	   24a0	pwm-FUNCIONA.elf
+Finished building: default.size.stdout
+ 
+
+00:17:47 Build Finished. 0 errors, 0 warnings. (took 420ms)
+

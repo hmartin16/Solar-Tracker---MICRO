@@ -1,0 +1,75 @@
+06:16:21 **** Incremental Build of configuration Debug for project try-pwm ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:107:7: error: too many arguments to function 'Error_Handler'
+  107 |       Error_Handler(1);
+      |       ^~~~~~~~~~~~~
+In file included from ../Core/Src/main.c:20:
+../Core/Inc/main.h:55:6: note: declared here
+   55 | void Error_Handler(void);
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c: In function 'SystemClock_Config':
+../Core/Src/main.c:134:5: error: too many arguments to function 'Error_Handler'
+  134 |     Error_Handler(2);
+      |     ^~~~~~~~~~~~~
+In file included from ../Core/Src/main.c:20:
+../Core/Inc/main.h:55:6: note: declared here
+   55 | void Error_Handler(void);
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c:148:5: error: too many arguments to function 'Error_Handler'
+  148 |     Error_Handler(3);
+      |     ^~~~~~~~~~~~~
+In file included from ../Core/Src/main.c:20:
+../Core/Inc/main.h:55:6: note: declared here
+   55 | void Error_Handler(void);
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c: In function 'MX_TIM2_Init':
+../Core/Src/main.c:179:5: error: too many arguments to function 'Error_Handler'
+  179 |     Error_Handler(4);
+      |     ^~~~~~~~~~~~~
+In file included from ../Core/Src/main.c:20:
+../Core/Inc/main.h:55:6: note: declared here
+   55 | void Error_Handler(void);
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c:184:5: error: too many arguments to function 'Error_Handler'
+  184 |     Error_Handler(5);
+      |     ^~~~~~~~~~~~~
+In file included from ../Core/Src/main.c:20:
+../Core/Inc/main.h:55:6: note: declared here
+   55 | void Error_Handler(void);
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c:188:5: error: too many arguments to function 'Error_Handler'
+  188 |     Error_Handler(6);
+      |     ^~~~~~~~~~~~~
+In file included from ../Core/Src/main.c:20:
+../Core/Inc/main.h:55:6: note: declared here
+   55 | void Error_Handler(void);
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c:194:5: error: too many arguments to function 'Error_Handler'
+  194 |     Error_Handler(7);
+      |     ^~~~~~~~~~~~~
+In file included from ../Core/Src/main.c:20:
+../Core/Inc/main.h:55:6: note: declared here
+   55 | void Error_Handler(void);
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c:202:5: error: too many arguments to function 'Error_Handler'
+  202 |     Error_Handler(8);
+      |     ^~~~~~~~~~~~~
+In file included from ../Core/Src/main.c:20:
+../Core/Inc/main.h:55:6: note: declared here
+   55 | void Error_Handler(void);
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:255:6: error: conflicting types for 'Error_Handler'; have 'void(int)'
+  255 | void Error_Handler(int errorCode)
+      |      ^~~~~~~~~~~~~
+In file included from ../Core/Src/main.c:20:
+../Core/Inc/main.h:55:6: note: previous declaration of 'Error_Handler' with type 'void(void)'
+   55 | void Error_Handler(void);
+      |      ^~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+
+06:16:21 Build Failed. 10 errors, 0 warnings. (took 365ms)
+

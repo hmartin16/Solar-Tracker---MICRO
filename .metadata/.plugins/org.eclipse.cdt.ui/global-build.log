@@ -1,0 +1,694 @@
+19:34:39 **** Incremental Build of configuration Debug for project ACD_prueba ****
+make -j4 all 
+arm-none-eabi-gcc -o "ACD_prueba.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Usuarios\martin\documents\STM_pruebas\ACD_prueba\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ACD_prueba.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ACD_prueba.elf
+ 
+arm-none-eabi-size  ACD_prueba.elf 
+arm-none-eabi-objdump -h -S ACD_prueba.elf  > "ACD_prueba.list"
+   text	   data	    bss	    dec	    hex	filename
+   8584	     20	   1700	  10304	   2840	ACD_prueba.elf
+arm-none-eabi-objcopy  -O ihex ACD_prueba.elf  "ACD_prueba.hex"
+Finished building: default.size.stdout
+ 
+Finished building: ACD_prueba.hex
+ 
+Finished building: ACD_prueba.list
+ 
+19:57:00 **** Incremental Build of configuration Debug for project ACD_prueba ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "ACD_prueba.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Usuarios\martin\documents\STM_pruebas\ACD_prueba\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ACD_prueba.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ACD_prueba.elf
+ 
+arm-none-eabi-size  ACD_prueba.elf 
+arm-none-eabi-objdump -h -S ACD_prueba.elf  > "ACD_prueba.list"
+   text	   data	    bss	    dec	    hex	filename
+   8584	     20	   1700	  10304	   2840	ACD_prueba.elf
+arm-none-eabi-objcopy  -O ihex ACD_prueba.elf  "ACD_prueba.hex"
+Finished building: default.size.stdout
+ 
+Finished building: ACD_prueba.hex
+ 
+Finished building: ACD_prueba.list
+ 
+21:49:53 **** Incremental Build of configuration Debug for project ACD_prueba ****
+make -j4 all 
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_hal_msp.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f1xx_hal_msp.d" -MT"Core/Src/stm32f1xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_it.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f1xx_it.d" -MT"Core/Src/stm32f1xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_it.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:132:13: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  132 |             sprintf(uart_tx_buffer, "ADC0: %lu, ADC1: %lu, ADC2: %lu\r\n", ADC_values[0], ADC_values[1], ADC_values[2]);
+      |             ^~~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:132:13: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  132 |             sprintf(uart_tx_buffer, "ADC0: %lu, ADC1: %lu, ADC2: %lu\r\n", ADC_values[0], ADC_values[1], ADC_values[2]);
+      |             ^~~~~~~
+../Core/Src/main.c:132:13: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c:133:66: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  133 |             HAL_UART_Transmit(&huart1, (uint8_t*)uart_tx_buffer, strlen(uart_tx_buffer), HAL_MAX_DELAY);
+      |                                                                  ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:133:66: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+  133 |             HAL_UART_Transmit(&huart1, (uint8_t*)uart_tx_buffer, strlen(uart_tx_buffer), HAL_MAX_DELAY);
+      |                                                                  ^~~~~~
+../Core/Src/main.c:133:66: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc "../Core/Src/system_stm32f1xx.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f1xx.d" -MT"Core/Src/system_stm32f1xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/system_stm32f1xx.o"
+arm-none-eabi-gcc -o "ACD_prueba.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Usuarios\martin\documents\STM_pruebas\ACD_prueba\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ACD_prueba.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ACD_prueba.elf
+ 
+arm-none-eabi-size  ACD_prueba.elf 
+arm-none-eabi-objdump -h -S ACD_prueba.elf  > "ACD_prueba.list"
+arm-none-eabi-objcopy  -O ihex ACD_prueba.elf  "ACD_prueba.hex"
+   text	   data	    bss	    dec	    hex	filename
+  12444	    100	   2100	  14644	   3934	ACD_prueba.elf
+Finished building: default.size.stdout
+ 
+Finished building: ACD_prueba.list
+Finished building: ACD_prueba.hex
+ 
+ 
+21:50:37 **** Incremental Build of configuration Debug for project ACD_prueba ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:133:66: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  133 |             HAL_UART_Transmit(&huart1, (uint8_t*)uart_tx_buffer, strlen(uart_tx_buffer), HAL_MAX_DELAY);
+      |                                                                  ^~~~~~
+../Core/Src/main.c:25:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   24 | #include <stdio.h>
+  +++ |+#include <string.h>
+   25 | /* USER CODE END Includes */
+../Core/Src/main.c:133:66: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+  133 |             HAL_UART_Transmit(&huart1, (uint8_t*)uart_tx_buffer, strlen(uart_tx_buffer), HAL_MAX_DELAY);
+      |                                                                  ^~~~~~
+../Core/Src/main.c:133:66: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc -o "ACD_prueba.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Usuarios\martin\documents\STM_pruebas\ACD_prueba\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ACD_prueba.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ACD_prueba.elf
+ 
+arm-none-eabi-size  ACD_prueba.elf 
+arm-none-eabi-objdump -h -S ACD_prueba.elf  > "ACD_prueba.list"
+   text	   data	    bss	    dec	    hex	filename
+  12444	    100	   2100	  14644	   3934	ACD_prueba.elf
+arm-none-eabi-objcopy  -O ihex ACD_prueba.elf  "ACD_prueba.hex"
+Finished building: default.size.stdout
+ 
+Finished building: ACD_prueba.hex
+ 
+Finished building: ACD_prueba.list
+ 
+21:52:21 **** Incremental Build of configuration Debug for project ACD_prueba ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "ACD_prueba.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Usuarios\martin\documents\STM_pruebas\ACD_prueba\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ACD_prueba.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ACD_prueba.elf
+ 
+arm-none-eabi-size  ACD_prueba.elf 
+arm-none-eabi-objdump -h -S ACD_prueba.elf  > "ACD_prueba.list"
+   text	   data	    bss	    dec	    hex	filename
+  12444	    100	   2100	  14644	   3934	ACD_prueba.elf
+arm-none-eabi-objcopy  -O ihex ACD_prueba.elf  "ACD_prueba.hex"
+Finished building: default.size.stdout
+ 
+Finished building: ACD_prueba.hex
+ 
+Finished building: ACD_prueba.list
+ 
+21:56:07 **** Incremental Build of configuration Debug for project ACD_prueba ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "ACD_prueba.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Usuarios\martin\documents\STM_pruebas\ACD_prueba\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ACD_prueba.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ACD_prueba.elf
+ 
+arm-none-eabi-size  ACD_prueba.elf 
+arm-none-eabi-objdump -h -S ACD_prueba.elf  > "ACD_prueba.list"
+   text	   data	    bss	    dec	    hex	filename
+  12444	    100	   2100	  14644	   3934	ACD_prueba.elf
+arm-none-eabi-objcopy  -O ihex ACD_prueba.elf  "ACD_prueba.hex"
+Finished building: default.size.stdout
+ 
+Finished building: ACD_prueba.hex
+ 
+Finished building: ACD_prueba.list
+ 
+21:57:34 **** Incremental Build of configuration Debug for project ACD_prueba ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "ACD_prueba.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Usuarios\martin\documents\STM_pruebas\ACD_prueba\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ACD_prueba.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ACD_prueba.elf
+ 
+arm-none-eabi-size  ACD_prueba.elf 
+arm-none-eabi-objdump -h -S ACD_prueba.elf  > "ACD_prueba.list"
+   text	   data	    bss	    dec	    hex	filename
+  12444	    100	   2100	  14644	   3934	ACD_prueba.elf
+arm-none-eabi-objcopy  -O ihex ACD_prueba.elf  "ACD_prueba.hex"
+Finished building: default.size.stdout
+ 
+Finished building: ACD_prueba.hex
+ 
+Finished building: ACD_prueba.list
+ 
+00:39:37 **** Incremental Build of configuration Debug for project LDRs ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LDRs.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Usuarios\martin\documents\STM_pruebas\LDRs\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LDRs.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LDRs.elf
+ 
+arm-none-eabi-size  LDRs.elf 
+arm-none-eabi-objdump -h -S LDRs.elf  > "LDRs.list"
+arm-none-eabi-objcopy  -O ihex LDRs.elf  "LDRs.hex"
+   text	   data	    bss	    dec	    hex	filename
+  29556	    476	   2188	  32220	   7ddc	LDRs.elf
+Finished building: default.size.stdout
+ 
+Finished building: LDRs.hex
+ 
+Finished building: LDRs.list
+ 
+01:02:41 **** Incremental Build of configuration Debug for project LDRs ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_hal_msp.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f1xx_hal_msp.d" -MT"Core/Src/stm32f1xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_it.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f1xx_it.d" -MT"Core/Src/stm32f1xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_it.o"
+arm-none-eabi-gcc -o "LDRs.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Usuarios\martin\documents\STM_pruebas\LDRs\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LDRs.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LDRs.elf
+ 
+arm-none-eabi-size  LDRs.elf 
+arm-none-eabi-objdump -h -S LDRs.elf  > "LDRs.list"
+arm-none-eabi-objcopy  -O ihex LDRs.elf  "LDRs.hex"
+   text	   data	    bss	    dec	    hex	filename
+  30012	    476	   2188	  32676	   7fa4	LDRs.elf
+Finished building: default.size.stdout
+ 
+Finished building: LDRs.hex
+ 
+Finished building: LDRs.list
+ 
+01:22:49 **** Incremental Build of configuration Debug for project LDRs ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LDRs.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Usuarios\martin\documents\STM_pruebas\LDRs\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LDRs.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LDRs.elf
+ 
+arm-none-eabi-size  LDRs.elf 
+arm-none-eabi-objdump -h -S LDRs.elf  > "LDRs.list"
+arm-none-eabi-objcopy  -O ihex LDRs.elf  "LDRs.hex"
+   text	   data	    bss	    dec	    hex	filename
+  29732	    476	   2188	  32396	   7e8c	LDRs.elf
+Finished building: default.size.stdout
+Finished building: LDRs.hex
+ 
+ 
+Finished building: LDRs.list
+ 
+01:28:38 **** Incremental Build of configuration Debug for project LDRs ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LDRs.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Usuarios\martin\documents\STM_pruebas\LDRs\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LDRs.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LDRs.elf
+ 
+arm-none-eabi-size  LDRs.elf 
+arm-none-eabi-objdump -h -S LDRs.elf  > "LDRs.list"
+arm-none-eabi-objcopy  -O ihex LDRs.elf  "LDRs.hex"
+   text	   data	    bss	    dec	    hex	filename
+  29732	    476	   2188	  32396	   7e8c	LDRs.elf
+Finished building: default.size.stdout
+ 
+Finished building: LDRs.hex
+ 
+Finished building: LDRs.list
+ 
+01:32:04 **** Incremental Build of configuration Debug for project LDRs ****
+make -j4 all 
+arm-none-eabi-size  LDRs.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29732	    476	   2188	  32396	   7e8c	LDRs.elf
+Finished building: default.size.stdout
+ 
+01:44:04 **** Incremental Build of configuration Debug for project LDRs ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LDRs.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Usuarios\martin\documents\STM_pruebas\LDRs\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LDRs.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LDRs.elf
+ 
+arm-none-eabi-size  LDRs.elf 
+arm-none-eabi-objdump -h -S LDRs.elf  > "LDRs.list"
+arm-none-eabi-objcopy  -O ihex LDRs.elf  "LDRs.hex"
+   text	   data	    bss	    dec	    hex	filename
+  29732	    476	   2188	  32396	   7e8c	LDRs.elf
+Finished building: default.size.stdout
+ 
+Finished building: LDRs.hex
+ 
+Finished building: LDRs.list
+ 
+01:45:34 **** Incremental Build of configuration Debug for project LDRs ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LDRs.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Usuarios\martin\documents\STM_pruebas\LDRs\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LDRs.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LDRs.elf
+ 
+arm-none-eabi-size  LDRs.elf 
+arm-none-eabi-objdump -h -S LDRs.elf  > "LDRs.list"
+   text	   data	    bss	    dec	    hex	filename
+  29732	    476	   2188	  32396	   7e8c	LDRs.elf
+arm-none-eabi-objcopy  -O ihex LDRs.elf  "LDRs.hex"
+Finished building: default.size.stdout
+ 
+Finished building: LDRs.hex
+ 
+Finished building: LDRs.list
+ 
+01:46:37 **** Incremental Build of configuration Debug for project LDRs ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LDRs.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Usuarios\martin\documents\STM_pruebas\LDRs\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LDRs.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LDRs.elf
+ 
+arm-none-eabi-size  LDRs.elf 
+arm-none-eabi-objdump -h -S LDRs.elf  > "LDRs.list"
+   text	   data	    bss	    dec	    hex	filename
+  29732	    476	   2188	  32396	   7e8c	LDRs.elf
+arm-none-eabi-objcopy  -O ihex LDRs.elf  "LDRs.hex"
+Finished building: default.size.stdout
+ 
+Finished building: LDRs.hex
+ 
+Finished building: LDRs.list
+ 
+01:54:17 **** Incremental Build of configuration Debug for project LDRs ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_hal_msp.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f1xx_hal_msp.d" -MT"Core/Src/stm32f1xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_hal_msp.o"
+arm-none-eabi-gcc -o "LDRs.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Usuarios\martin\documents\STM_pruebas\LDRs\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LDRs.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LDRs.elf
+ 
+arm-none-eabi-size  LDRs.elf 
+arm-none-eabi-objdump -h -S LDRs.elf  > "LDRs.list"
+   text	   data	    bss	    dec	    hex	filename
+  29804	    476	   2188	  32468	   7ed4	LDRs.elf
+arm-none-eabi-objcopy  -O ihex LDRs.elf  "LDRs.hex"
+Finished building: default.size.stdout
+ 
+Finished building: LDRs.hex
+ 
+Finished building: LDRs.list
+ 
+01:55:51 **** Incremental Build of configuration Debug for project LDRs ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LDRs.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Usuarios\martin\documents\STM_pruebas\LDRs\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LDRs.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LDRs.elf
+ 
+arm-none-eabi-size  LDRs.elf 
+arm-none-eabi-objdump -h -S LDRs.elf  > "LDRs.list"
+arm-none-eabi-objcopy  -O ihex LDRs.elf  "LDRs.hex"
+   text	   data	    bss	    dec	    hex	filename
+  29804	    476	   2188	  32468	   7ed4	LDRs.elf
+Finished building: default.size.stdout
+ 
+Finished building: LDRs.hex
+ 
+Finished building: LDRs.list
+ 
+02:04:26 **** Incremental Build of configuration Debug for project LDRs ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LDRs.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Usuarios\martin\documents\STM_pruebas\LDRs\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LDRs.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LDRs.elf
+ 
+arm-none-eabi-size  LDRs.elf 
+arm-none-eabi-objdump -h -S LDRs.elf  > "LDRs.list"
+arm-none-eabi-objcopy  -O ihex LDRs.elf  "LDRs.hex"
+   text	   data	    bss	    dec	    hex	filename
+  29804	    476	   2188	  32468	   7ed4	LDRs.elf
+Finished building: default.size.stdout
+ 
+Finished building: LDRs.hex
+ 
+Finished building: LDRs.list
+ 
+02:08:13 **** Incremental Build of configuration Debug for project LDRs ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LDRs.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Usuarios\martin\documents\STM_pruebas\LDRs\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LDRs.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LDRs.elf
+ 
+arm-none-eabi-size  LDRs.elf 
+arm-none-eabi-objdump -h -S LDRs.elf  > "LDRs.list"
+arm-none-eabi-objcopy  -O ihex LDRs.elf  "LDRs.hex"
+   text	   data	    bss	    dec	    hex	filename
+  29804	    476	   2188	  32468	   7ed4	LDRs.elf
+Finished building: default.size.stdout
+ 
+Finished building: LDRs.hex
+ 
+Finished building: LDRs.list
+ 
+02:25:59 **** Incremental Build of configuration Debug for project LDRs ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LDRs.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Usuarios\martin\documents\STM_pruebas\LDRs\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LDRs.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LDRs.elf
+ 
+arm-none-eabi-size  LDRs.elf 
+arm-none-eabi-objdump -h -S LDRs.elf  > "LDRs.list"
+   text	   data	    bss	    dec	    hex	filename
+  30004	    476	   2188	  32668	   7f9c	LDRs.elf
+arm-none-eabi-objcopy  -O ihex LDRs.elf  "LDRs.hex"
+Finished building: default.size.stdout
+ 
+Finished building: LDRs.hex
+ 
+Finished building: LDRs.list
+ 
+02:38:48 **** Incremental Build of configuration Debug for project LDRs ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LDRs.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Usuarios\martin\documents\STM_pruebas\LDRs\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LDRs.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LDRs.elf
+ 
+arm-none-eabi-size  LDRs.elf 
+arm-none-eabi-objdump -h -S LDRs.elf  > "LDRs.list"
+arm-none-eabi-objcopy  -O ihex LDRs.elf  "LDRs.hex"
+   text	   data	    bss	    dec	    hex	filename
+  29996	    476	   2188	  32660	   7f94	LDRs.elf
+Finished building: default.size.stdout
+ 
+Finished building: LDRs.hex
+ 
+Finished building: LDRs.list
+ 
+02:42:06 **** Incremental Build of configuration Debug for project LDRs ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LDRs.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Usuarios\martin\documents\STM_pruebas\LDRs\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LDRs.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LDRs.elf
+ 
+arm-none-eabi-size  LDRs.elf 
+arm-none-eabi-objdump -h -S LDRs.elf  > "LDRs.list"
+arm-none-eabi-objcopy  -O ihex LDRs.elf  "LDRs.hex"
+   text	   data	    bss	    dec	    hex	filename
+  29996	    476	   2188	  32660	   7f94	LDRs.elf
+Finished building: default.size.stdout
+ 
+Finished building: LDRs.hex
+ 
+Finished building: LDRs.list
+ 
+02:43:43 **** Incremental Build of configuration Debug for project LDRs ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LDRs.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Usuarios\martin\documents\STM_pruebas\LDRs\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LDRs.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LDRs.elf
+ 
+arm-none-eabi-size  LDRs.elf 
+arm-none-eabi-objdump -h -S LDRs.elf  > "LDRs.list"
+arm-none-eabi-objcopy  -O ihex LDRs.elf  "LDRs.hex"
+   text	   data	    bss	    dec	    hex	filename
+  29996	    476	   2188	  32660	   7f94	LDRs.elf
+Finished building: default.size.stdout
+ 
+Finished building: LDRs.hex
+ 
+Finished building: LDRs.list
+ 
+02:46:37 **** Incremental Build of configuration Debug for project LDRs ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LDRs.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Usuarios\martin\documents\STM_pruebas\LDRs\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LDRs.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LDRs.elf
+ 
+arm-none-eabi-size  LDRs.elf 
+arm-none-eabi-objdump -h -S LDRs.elf  > "LDRs.list"
+   text	   data	    bss	    dec	    hex	filename
+  30004	    476	   2188	  32668	   7f9c	LDRs.elf
+arm-none-eabi-objcopy  -O ihex LDRs.elf  "LDRs.hex"
+Finished building: default.size.stdout
+ 
+Finished building: LDRs.hex
+ 
+Finished building: LDRs.list
+ 
+02:50:58 **** Incremental Build of configuration Debug for project LDRs ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LDRs.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Usuarios\martin\documents\STM_pruebas\LDRs\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LDRs.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LDRs.elf
+ 
+arm-none-eabi-size  LDRs.elf 
+arm-none-eabi-objdump -h -S LDRs.elf  > "LDRs.list"
+   text	   data	    bss	    dec	    hex	filename
+  29996	    476	   2188	  32660	   7f94	LDRs.elf
+arm-none-eabi-objcopy  -O ihex LDRs.elf  "LDRs.hex"
+Finished building: default.size.stdout
+ 
+Finished building: LDRs.hex
+ 
+Finished building: LDRs.list
+ 
+02:52:45 **** Incremental Build of configuration Debug for project LDRs ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LDRs.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Usuarios\martin\documents\STM_pruebas\LDRs\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LDRs.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LDRs.elf
+ 
+arm-none-eabi-size  LDRs.elf 
+arm-none-eabi-objdump -h -S LDRs.elf  > "LDRs.list"
+arm-none-eabi-objcopy  -O ihex LDRs.elf  "LDRs.hex"
+   text	   data	    bss	    dec	    hex	filename
+  29996	    476	   2188	  32660	   7f94	LDRs.elf
+Finished building: default.size.stdout
+ 
+Finished building: LDRs.hex
+ 
+Finished building: LDRs.list
+ 
+02:54:28 **** Incremental Build of configuration Debug for project LDRs ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LDRs.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Usuarios\martin\documents\STM_pruebas\LDRs\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LDRs.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LDRs.elf
+ 
+arm-none-eabi-size  LDRs.elf 
+arm-none-eabi-objdump -h -S LDRs.elf  > "LDRs.list"
+   text	   data	    bss	    dec	    hex	filename
+  29996	    476	   2188	  32660	   7f94	LDRs.elf
+arm-none-eabi-objcopy  -O ihex LDRs.elf  "LDRs.hex"
+Finished building: default.size.stdout
+ 
+Finished building: LDRs.hex
+ 
+Finished building: LDRs.list
+ 
+02:55:38 **** Incremental Build of configuration Debug for project LDRs ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LDRs.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Usuarios\martin\documents\STM_pruebas\LDRs\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LDRs.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LDRs.elf
+ 
+arm-none-eabi-size  LDRs.elf 
+arm-none-eabi-objdump -h -S LDRs.elf  > "LDRs.list"
+arm-none-eabi-objcopy  -O ihex LDRs.elf  "LDRs.hex"
+   text	   data	    bss	    dec	    hex	filename
+  29996	    476	   2188	  32660	   7f94	LDRs.elf
+Finished building: default.size.stdout
+ 
+Finished building: LDRs.hex
+ 
+Finished building: LDRs.list
+ 
+02:58:48 **** Incremental Build of configuration Debug for project LDRs ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LDRs.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Usuarios\martin\documents\STM_pruebas\LDRs\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LDRs.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LDRs.elf
+ 
+arm-none-eabi-size  LDRs.elf 
+arm-none-eabi-objdump -h -S LDRs.elf  > "LDRs.list"
+arm-none-eabi-objcopy  -O ihex LDRs.elf  "LDRs.hex"
+   text	   data	    bss	    dec	    hex	filename
+  30004	    476	   2188	  32668	   7f9c	LDRs.elf
+Finished building: default.size.stdout
+ 
+Finished building: LDRs.hex
+ 
+Finished building: LDRs.list
+ 
+03:01:28 **** Incremental Build of configuration Debug for project LDRs ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_hal_msp.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f1xx_hal_msp.d" -MT"Core/Src/stm32f1xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_it.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f1xx_it.d" -MT"Core/Src/stm32f1xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_it.o"
+arm-none-eabi-gcc -o "LDRs.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Usuarios\martin\documents\STM_pruebas\LDRs\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LDRs.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LDRs.elf
+ 
+arm-none-eabi-size  LDRs.elf 
+arm-none-eabi-objdump -h -S LDRs.elf  > "LDRs.list"
+arm-none-eabi-objcopy  -O ihex LDRs.elf  "LDRs.hex"
+   text	   data	    bss	    dec	    hex	filename
+  29476	    476	   2188	  32140	   7d8c	LDRs.elf
+Finished building: default.size.stdout
+ 
+Finished building: LDRs.hex
+ 
+Finished building: LDRs.list
+ 
+03:04:22 **** Incremental Build of configuration Debug for project LDRs ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LDRs.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Usuarios\martin\documents\STM_pruebas\LDRs\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LDRs.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LDRs.elf
+ 
+arm-none-eabi-size  LDRs.elf 
+arm-none-eabi-objdump -h -S LDRs.elf  > "LDRs.list"
+arm-none-eabi-objcopy  -O ihex LDRs.elf  "LDRs.hex"
+   text	   data	    bss	    dec	    hex	filename
+  29676	    476	   2188	  32340	   7e54	LDRs.elf
+Finished building: default.size.stdout
+ 
+Finished building: LDRs.hex
+ 
+Finished building: LDRs.list
+ 
+03:12:36 **** Incremental Build of configuration Debug for project LDRs ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LDRs.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Usuarios\martin\documents\STM_pruebas\LDRs\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LDRs.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LDRs.elf
+ 
+arm-none-eabi-size  LDRs.elf 
+arm-none-eabi-objdump -h -S LDRs.elf  > "LDRs.list"
+   text	   data	    bss	    dec	    hex	filename
+  29684	    476	   2188	  32348	   7e5c	LDRs.elf
+arm-none-eabi-objcopy  -O ihex LDRs.elf  "LDRs.hex"
+Finished building: default.size.stdout
+ 
+Finished building: LDRs.hex
+ 
+Finished building: LDRs.list
+ 
+03:15:07 **** Incremental Build of configuration Debug for project LDRs ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LDRs.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Usuarios\martin\documents\STM_pruebas\LDRs\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LDRs.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LDRs.elf
+ 
+arm-none-eabi-size  LDRs.elf 
+arm-none-eabi-objdump -h -S LDRs.elf  > "LDRs.list"
+arm-none-eabi-objcopy  -O ihex LDRs.elf  "LDRs.hex"
+   text	   data	    bss	    dec	    hex	filename
+  29764	    476	   2188	  32428	   7eac	LDRs.elf
+Finished building: default.size.stdout
+Finished building: LDRs.hex
+ 
+ 
+Finished building: LDRs.list
+ 
+03:34:05 **** Incremental Build of configuration Debug for project LDRs ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LDRs.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Usuarios\martin\documents\STM_pruebas\LDRs\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LDRs.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LDRs.elf
+ 
+arm-none-eabi-size  LDRs.elf 
+arm-none-eabi-objdump -h -S LDRs.elf  > "LDRs.list"
+   text	   data	    bss	    dec	    hex	filename
+  29708	    476	   2188	  32372	   7e74	LDRs.elf
+arm-none-eabi-objcopy  -O ihex LDRs.elf  "LDRs.hex"
+Finished building: default.size.stdout
+ 
+Finished building: LDRs.hex
+ 
+Finished building: LDRs.list
+ 
+03:38:58 **** Incremental Build of configuration Debug for project LDRs ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LDRs.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Usuarios\martin\documents\STM_pruebas\LDRs\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LDRs.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LDRs.elf
+ 
+arm-none-eabi-size  LDRs.elf 
+arm-none-eabi-objdump -h -S LDRs.elf  > "LDRs.list"
+   text	   data	    bss	    dec	    hex	filename
+  29676	    476	   2188	  32340	   7e54	LDRs.elf
+arm-none-eabi-objcopy  -O ihex LDRs.elf  "LDRs.hex"
+Finished building: default.size.stdout
+ 
+Finished building: LDRs.hex
+ 
+Finished building: LDRs.list
+ 
+03:55:28 **** Incremental Build of configuration Debug for project LDRs ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LDRs.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Usuarios\martin\documents\STM_pruebas\LDRs\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LDRs.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LDRs.elf
+ 
+arm-none-eabi-size  LDRs.elf 
+arm-none-eabi-objdump -h -S LDRs.elf  > "LDRs.list"
+   text	   data	    bss	    dec	    hex	filename
+  29676	    476	   2188	  32340	   7e54	LDRs.elf
+arm-none-eabi-objcopy  -O ihex LDRs.elf  "LDRs.hex"
+Finished building: default.size.stdout
+ 
+Finished building: LDRs.hex
+ 
+Finished building: LDRs.list
+ 
+03:56:43 **** Incremental Build of configuration Debug for project LDRs ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LDRs.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Usuarios\martin\documents\STM_pruebas\LDRs\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LDRs.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LDRs.elf
+ 
+arm-none-eabi-size  LDRs.elf 
+arm-none-eabi-objdump -h -S LDRs.elf  > "LDRs.list"
+   text	   data	    bss	    dec	    hex	filename
+  29684	    476	   2188	  32348	   7e5c	LDRs.elf
+arm-none-eabi-objcopy  -O ihex LDRs.elf  "LDRs.hex"
+Finished building: default.size.stdout
+ 
+Finished building: LDRs.hex
+ 
+Finished building: LDRs.list
+ 
+04:11:33 **** Incremental Build of configuration Debug for project LDRs ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LDRs.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Usuarios\martin\documents\STM_pruebas\LDRs\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LDRs.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LDRs.elf
+ 
+arm-none-eabi-size  LDRs.elf 
+arm-none-eabi-objdump -h -S LDRs.elf  > "LDRs.list"
+   text	   data	    bss	    dec	    hex	filename
+  29692	    476	   2188	  32356	   7e64	LDRs.elf
+arm-none-eabi-objcopy  -O ihex LDRs.elf  "LDRs.hex"
+Finished building: default.size.stdout
+ 
+Finished building: LDRs.hex
+ 
+Finished building: LDRs.list
+ 

@@ -1,0 +1,10 @@
+00:17:43 **** Incremental Build of configuration Debug for project intento1000PWM ****
+make -j4 all 
+arm-none-eabi-size  intento1000PWM.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8176	     20	   1716	   9912	   26b8	intento1000PWM.elf
+Finished building: default.size.stdout
+ 
+
+00:17:44 Build Finished. 0 errors, 0 warnings. (took 476ms)
+

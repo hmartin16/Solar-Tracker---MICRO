@@ -1,0 +1,19 @@
+18:59:20 **** Incremental Build of configuration Debug for project pwm-prueba ****
+make -j4 all 
+arm-none-eabi-gcc -o "pwm-prueba.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Usuarios\martin\documents\STM_pruebas\pwm-prueba\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="pwm-prueba.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: pwm-prueba.elf
+ 
+arm-none-eabi-size  pwm-prueba.elf 
+arm-none-eabi-objdump -h -S pwm-prueba.elf  > "pwm-prueba.list"
+arm-none-eabi-objcopy  -O ihex pwm-prueba.elf  "pwm-prueba.hex"
+   text	   data	    bss	    dec	    hex	filename
+   7716	     20	   1644	   9380	   24a4	pwm-prueba.elf
+Finished building: default.size.stdout
+ 
+Finished building: pwm-prueba.hex
+Finished building: pwm-prueba.list
+ 
+ 
+
+18:59:21 Build Finished. 0 errors, 0 warnings. (took 626ms)
+
